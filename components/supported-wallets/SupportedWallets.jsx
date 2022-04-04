@@ -6,7 +6,7 @@ import styles from "./SupportedWallets.module.scss";
 const SupportedWallets = () => {
   return (
     <div className={styles["wallets"]}>
-      <h3 className={styles["wallets-headline"]}>Supported Wallets</h3>
+      <h4 className={styles["wallets-headline"]}>Supported Wallets</h4>
       <div className={styles["wallets-logos"]}>
         {SUPPORTED_WALLETS.map((wallet, i) => {
           return (

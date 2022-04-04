@@ -1,0 +1,49 @@
+@use "../../styles/tokens.scss";
+
+.content-container {
+	align-items: center;
+	backdrop-filter: blur(10px);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	min-height: 512px;
+	justify-content: center;
+	margin: 0 0 24px 0;
+	text-align: center;
+	min-width: 512px;
+}
+
+.content-container-clear {
+	align-items: center;
+	backdrop-filter: blur(10px);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	min-height: 512px;
+	justify-content: center;
+	margin: 0 0 24px 0;
+	text-align: center;
+	min-width: 512px;
+}
+
+
+
+.auto-height {
+	min-height: auto;
+}
+
+.default {
+	background: none;
+}
+
+.clear { 
+	background: none;
+}
+
+.success {
+	background: tokens.$background-success, tokens.$background-dark-100;
+}
+
+.error {
+	background: tokens.$background-error, tokens.$background-dark-100;
+}

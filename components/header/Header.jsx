@@ -2,6 +2,7 @@ import Image from "next/image";
 import Head from "next/head";
 import styles from "./Header.module.scss";
 import { HEADER_IMAGE } from "../../lib/constants";
+import HeroCopy from "../poll-for-signature/HeroCopy";
 
 const Header = () => {
   return (
@@ -9,10 +10,11 @@ const Header = () => {
       <Head>
         <title>NFT Vending Machine</title>
       </Head>
+      <br/><br/>
       <Image
         src={HEADER_IMAGE}
-        width={1080}
-        height={100}
+        width={500}
+        height={200}
         alt="Header"
         priority
       />

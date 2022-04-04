@@ -4,7 +4,7 @@ import ContentContainer from "../content-container/ContentContainer";
 import QRCode from "../qr-code/QRCode";
 import Instruction from "../instruction/Instruction";
 import styles from "./PollForSignature.module.scss";
-import SupportedWallets from "../supported-wallets/SupportedWallets";
+
 import HeroCopy from "./HeroCopy";
 import CreditLine from "./CreditLine";
 
@@ -27,17 +27,15 @@ const PollForSignature = ({ qrCodeParams }) => {
   return (
     <div className={styles.container}>
       <HeroCopy />
-      <ContentContainer>
-        <QRCode qrCodeParams={qrCodeParams} />
-      </ContentContainer>
-
       <div className={styles.instructions}>
         <Instruction
           stepNumber={currentInstruction}
           stepText={INSTRUCTION_STEPS[currentInstruction - 1]}
         />
       </div>
-      <SupportedWallets />
+      <ContentContainer>
+        <QRCode qrCodeParams={qrCodeParams} />
+      </ContentContainer>
       <CreditLine />
     </div>
   );
