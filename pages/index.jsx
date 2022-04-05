@@ -20,18 +20,19 @@ import ErrorScreen from '../components/error-screen/ErrorScreen'
 import Header from '../components/header/Header'
 import AmbientBackground from '../components/ambient-background/AmbientBackground'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Navigation, Pagination, EffectCoverflow } from 'swiper'
+import SwiperCore, { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper'
 
 // Import Swiper styles
 import 'swiper/css'
 import 'swiper/css/navigation' // Navigation module
 import 'swiper/css/pagination' // Pagination module
 import 'swiper/css/effect-coverflow'
+import 'swiper/css/autoplay'
 
 import styles from './index.module.scss'
 
 export default function Home () {
-  SwiperCore.use([Navigation, Pagination, EffectCoverflow])
+  SwiperCore.use([Navigation, Pagination, EffectCoverflow, Autoplay])
 
   const router = useRouter()
 
@@ -308,7 +309,7 @@ export default function Home () {
         
         <Swiper
           navigation
-          autoplay={true}
+          autoplay={{ delay: 5000 }}
           pagination={{ clickable: true }}
           effect='coverflow'
           loop={true}
@@ -317,7 +318,7 @@ export default function Home () {
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows: false
+            slideShadows: true
           }}
           slidesPerView={2}
           centeredSlides
