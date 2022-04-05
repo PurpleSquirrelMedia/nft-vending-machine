@@ -323,41 +323,76 @@ export default function Home () {
           centeredSlides
           style={{ height: '350px' }}
         >
-          <SwiperSlide
-            style={{
-              backgroundImage:
-                'url(http://placekitten.com/350)'
-            }}
-          >
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/1.gif'}/>
           </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-              'url(http://placekitten.com/350)'
-            }}
-          >
+
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/2.png'}/>
           </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-              'url(http://placekitten.com/350)'
-            }}
-          >
+
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/3.gif'}/>
           </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-              'url(http://placekitten.com/350)'
-            }}
-          >
+
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/4.png'}/>
           </SwiperSlide>
-          <SwiperSlide
-            style={{
-              backgroundImage:
-              'url(http://placekitten.com/350)'
-            }}
-          >
+
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/5.png'}/>
           </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/7.gif'}/>
+          </SwiperSlide>
+          
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/8.gif'}/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/9.gif'}/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/10.png'}/>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Image
+              height={500}
+              width={500}
+              src={'/images/nft/11.jpeg'}/>
+          </SwiperSlide>
+
         </Swiper>
       </div>
       </div>
