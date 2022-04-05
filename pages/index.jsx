@@ -402,7 +402,7 @@ export default function Home () {
         <div style={{ width: '33%', textAlign: 'center' }}>
           <Image
             src={'/images/metaplex-logo.svg'}
-            width={100}
+            width={175}
             height={33}
             alt='Header'
             priority
@@ -416,8 +416,8 @@ export default function Home () {
         <div style={{ width: '33%', textAlign: 'center' }}>
           <Image
             src={'/images/holaplex-logo.png'}
-            width={100}
-            height={33}
+            width={175}
+            height={30}
             alt='Header'
             priority
           />
